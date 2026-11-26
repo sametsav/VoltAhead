@@ -1,3 +1,0 @@
-group,stations,median_nan_share,max_nan_share,stations_over_50pct_nan,median_capacity
-kept in cleaned set,1362,0.056169429097605895,0.2993017188459177,0,10.0
-dropped,320,0.5820480356046653,1.0,171,15.0
