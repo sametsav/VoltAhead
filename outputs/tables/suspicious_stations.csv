@@ -1,6 +1,12 @@
 check,value
-100 % NaN (never report),21.0
-Report but `busy` never changes,6.0
-Empty (busy == 0) more than 90 % of the time,80.0
-Full (busy == capacity) more than 50 % of the time,49.0
-Share of valid observations where the station is completely full,0.043022669573330105
+100 % NaN (never report),1.0
+Report but `busy` never changes,0.0
+Empty (busy == 0) more than 90 % of their valid time,10.0
+Full (busy == capacity) more than 50 % of their valid time,4.0
+Stations with at least one fast-charging point,1.0
+Fast-charging points in the whole dataset,2.0
+Share of valid observations where the station is completely full,0.039674759211256405
+Share of valid observations where the station is completely empty,0.4400414289145252
+Mean occupancy rate (busy / capacity) over valid observations,0.19495310777076352
+Stations whose s_price takes more than 1 value,8.0
+Stations whose e_price takes more than 1 value,9.0
