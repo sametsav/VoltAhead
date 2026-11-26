@@ -1,0 +1,78 @@
+{
+    "dataset_version": "VOLTAHEAD-DATA-V1",
+    "source_dataset": "UrbanEV",
+    "preprocessing_module": "src/preprocessing.py",
+    "dataset_period": {
+        "start": "2022-12-01",
+        "end_inclusive": "2023-01-21",
+        "end_exclusive": "2023-01-22"
+    },
+    "missing_value_strategy": "complete_case",
+    "prediction_horizons_minutes": [
+        30,
+        40,
+        60
+    ],
+    "feature_columns": [
+        "station_id",
+        "hour",
+        "day_of_week",
+        "is_weekend",
+        "current_idle",
+        "current_busy",
+        "station_capacity",
+        "occupancy_rate",
+        "idle_lag_5",
+        "idle_lag_10",
+        "idle_lag_15",
+        "idle_lag_30",
+        "idle_lag_40",
+        "idle_lag_60",
+        "idle_lag_120",
+        "prediction_horizon"
+    ],
+    "target_definition": {
+        "column": "target",
+        "available_class": 1,
+        "unavailable_class": 0,
+        "missing_future_idle": "excluded"
+    },
+    "splits": {
+        "train": {
+            "start": "2022-12-01",
+            "end_exclusive": "2023-01-06",
+            "observations": 2798569,
+            "stations": 91
+        },
+        "validation": {
+            "start": "2023-01-06",
+            "end_exclusive": "2023-01-14",
+            "observations": 618726,
+            "stations": 90
+        },
+        "test": {
+            "start": "2023-01-14",
+            "end_exclusive": "2023-01-22",
+            "observations": 620433,
+            "stations": 93
+        }
+    },
+    "evaluation": {
+        "primary_objective": "future availability at existing stations",
+        "unseen_validation_stations": [
+            1948
+        ],
+        "unseen_test_stations": [
+            1790,
+            1948
+        ],
+        "probability_output": "P(Available=1)",
+        "initial_threshold": 0.5,
+        "random_seed": 42
+    },
+    "robustness_period": {
+        "start": "2023-01-22",
+        "end_inclusive": "2023-02-28",
+        "purpose": "post-selection robustness evaluation"
+    }
+}
