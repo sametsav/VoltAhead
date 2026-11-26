@@ -1,0 +1,10 @@
+check,rows_violating,stations_violating,valid_rows_checked,verdict
+busy + idle != charge_count (station capacity),0,0,69123930,OK
+busy > charge_count,0,0,69123930,OK
+negative busy / idle / fast / slow counts,0,0,69123930,OK
+non-integer busy or idle,0,0,69123930,OK
+fast_busy + slow_busy != busy,0,0,69123930,OK
+fast_idle + slow_idle != idle,0,0,69123930,OK
+fast_busy + fast_idle != fast_count (metadata),188065,4,69123930,CHECK
+slow_busy + slow_idle != slow_count (metadata),188065,4,69123930,CHECK
+negative price,0,0,69123930,OK

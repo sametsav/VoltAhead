@@ -1,0 +1,23 @@
+table,column,n_missing,total_rows,missing_share
+"raw station 5-min (1,682 files)",busy,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",idle,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",s_price,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",e_price,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",fast_busy,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",fast_idle,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",slow_busy,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",slow_idle,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",duration,18555366,87679296,0.21162768003976673
+"raw station 5-min (1,682 files)",volume,18555366,87679296,0.21162768003976673
+zone 5min,occupancy,0,14335200,0.0
+zone 1hour,occupancy,0,1194600,0.0
+zone 5min,duration,0,14335200,0.0
+zone 1hour,duration,0,1194600,0.0
+zone 5min,volume,0,14335200,0.0
+zone 1hour,volume,0,1194600,0.0
+zone 5min,volume-11kw,0,14335200,0.0
+zone 1hour,volume-11kw,0,1194600,0.0
+zone 5min,e_price,0,14335200,0.0
+zone 1hour,e_price,0,1194600,0.0
+zone 5min,s_price,0,14335200,0.0
+zone 1hour,s_price,0,1194600,0.0

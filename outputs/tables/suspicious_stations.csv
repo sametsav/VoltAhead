@@ -1,0 +1,6 @@
+check,value
+100 % NaN (never report),21.0
+Report but `busy` never changes,6.0
+Empty (busy == 0) more than 90 % of the time,80.0
+Full (busy == capacity) more than 50 % of the time,49.0
+Share of valid observations where the station is completely full,0.043022669573330105

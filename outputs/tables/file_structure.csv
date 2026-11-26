@@ -1,0 +1,11 @@
+path,type,n_files,size_MB,description
+20220901-20230228_station-raw/charge_5min,folder,1682,5335.02932,"One CSV per station, 5-min time series (busy, idle, prices, fast/slow split, duration, volume)"
+20220901-20230228_station-raw/pile_rated_power.csv,file,1,0.594627,"One row per charging pile: rated power, AC/DC type, station"
+20220901-20230228_station-raw/station_distance.csv,file,1,47.768184,Station x station distance matrix (metres)
+20220901-20230228_station-raw/station_information.csv,file,1,0.064286,"Station metadata: coordinates, slow/fast/total charging points, traffic zone (TAZID)"
+20220901-20230228_zone-cleaned-aggregated/adj.csv,file,1,0.152696,Zone x zone 0/1 adjacency matrix
+20220901-20230228_zone-cleaned-aggregated/charge_1hour,folder,6,89.598059,The same six matrices at hourly resolution
+20220901-20230228_zone-cleaned-aggregated/charge_5min,folder,6,1095.626282,Six zone-level matrices (time x TAZID) at 5-min resolution
+20220901-20230228_zone-cleaned-aggregated/distance.csv,file,1,0.897858,Zone x zone distance matrix (metres)
+20220901-20230228_zone-cleaned-aggregated/station_information.csv,file,1,0.045822,Metadata of the stations kept in the cleaned version
+20220901-20230228_zone-cleaned-aggregated/zone-information.csv,file,1,0.014666,"Zone metadata: centroid, charging points, area, perimeter"

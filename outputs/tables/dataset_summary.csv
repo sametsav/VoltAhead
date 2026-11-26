@@ -1,0 +1,22 @@
+section,metric,value
+General,Source,UrbanEV (charging stations in Shenzhen)
+General,Period,2022-09-01 to 2023-02-28 (181 days)
+Raw station data,Resolution,5 minutes
+Raw station data,Time steps per station,"52,128"
+Raw station data,Stations,"1,682"
+Raw station data,Charging points (sum of charge_count),"24,798"
+Raw station data,  slow / fast points,"21,165 / 3,633"
+Raw station data,Charging points listed in pile_rated_power.csv,"22,650"
+Raw station data,Station-timestamp rows,"87,679,296"
+Raw station data,Rows with real observations,"69,123,930 (78.8%)"
+Raw station data,All-NaN rows (missing observations),"18,555,366 (21.2%)"
+Raw station data,Duplicated timestamps / missing timestamps,0 / 0
+Raw station data,Stations 100 % NaN,21
+Raw station data,Capacity: median / mean / max (points per station),10 / 14.7 / 108
+Raw station data,Traffic zones with stations,331
+Cleaned zone data,Stations kept,"1,362"
+Cleaned zone data,Traffic zones,275
+Cleaned zone data,Matrix shape 5-min / hourly (time x zone),"(52128, 275) / (4344, 275)"
+Cleaned zone data,Variables,"occupancy, duration, volume, volume-11kw, e_price, s_price"
+Cleaned zone data,Missing values,0
+Consistency,busy + idle == charge_count,holds in 100 % of valid rows
