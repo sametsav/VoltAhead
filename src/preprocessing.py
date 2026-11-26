@@ -83,8 +83,15 @@ def validate_and_clean_data(df):
     if df.index.has_duplicates:
         raise ValueError("Duplicate station-time observations found.")
 
-    if df[required].isna().any(axis=1).sum() < 0:
-        raise ValueError("Invalid missing-value count.")
+    missing_columns = sorted(set(required) - set(df.columns))
+
+    if missing_columns:
+        raise ValueError(
+            f"Missing required base columns: {missing_columns}"
+        )
+
+    # Missing idle/busy observations are intentionally retained until
+    # the common complete-case filtering step.
 
     valid = df["idle"].notna() & df["busy"].notna()
 
@@ -95,7 +102,9 @@ def validate_and_clean_data(df):
     )
 
     if invalid.any():
-        raise ValueError("Invalid idle/busy/capacity observations found.")
+        raise ValueError(
+            "Invalid idle/busy/capacity observations found."
+        )
 
     if df["charge_count"].isna().any() or (
         df["charge_count"] <= 0
@@ -205,8 +214,10 @@ def create_horizon_dataset(df):
 
         horizon_df = base_df[
             ["station_id", "time"]
-            + [col for col in FEATURE_COLUMNS
-               if col not in ("station_id", "prediction_horizon")]
+            + [
+                col for col in FEATURE_COLUMNS
+                if col not in ("station_id", "prediction_horizon")
+            ]
             + [f"target_{horizon}"]
         ].copy()
 
@@ -304,7 +315,7 @@ def chronological_split(model_df):
 # ---------------------------------------------------------
 
 def validate_processed_data(train, validation, test):
-    """Verify the structure and chronological integrity."""
+    """Validate the shared model-ready dataset contract and chronology."""
 
     datasets = {
         "Train": train,
@@ -312,12 +323,27 @@ def validate_processed_data(train, validation, test):
         "Test": test,
     }
 
+    required_columns = (
+        ["station_id", "time", "target_time"]
+        + [
+            col for col in FEATURE_COLUMNS
+            if col != "station_id"
+        ]
+        + ["target"]
+    )
+
     forbidden = {
         "time", "target_time", "target",
-        "future_idle", "target_30", "target_40", "target_60"
+        "future_idle", "target_30",
+        "target_40", "target_60",
     }
 
+    # Common feature contract
+    assert len(FEATURE_COLUMNS) == 16
+    assert len(set(FEATURE_COLUMNS)) == 16
     assert not forbidden.intersection(FEATURE_COLUMNS)
+
+    reference_dtypes = train.dtypes
 
     for split_name, dataset in datasets.items():
 
@@ -326,33 +352,77 @@ def validate_processed_data(train, validation, test):
             for value in SPLIT_DATES[split_name]
         ]
 
+        # Exact shared schema and consistent Pandas dtypes
+        assert dataset.columns.tolist() == required_columns
+        assert dataset.dtypes.equals(reference_dtypes)
         assert not dataset.empty
+
+        # Complete features and binary target labels
         assert dataset[FEATURE_COLUMNS].notna().all().all()
         assert dataset["target"].isin([0, 1]).all()
+
+        # Both classes must be represented
+        assert set(dataset["target"].unique()) == {0.0, 1.0}
+
+        # Prediction horizons
         assert dataset["prediction_horizon"].isin(
             PREDICTION_HORIZONS
         ).all()
 
+        # Station ID integrity
+        assert dataset["station_id"].notna().all()
+
+        # Station capacity and charging counts
+        assert (dataset["station_capacity"] > 0).all()
+        assert (dataset["current_idle"] >= 0).all()
+        assert (dataset["current_busy"] >= 0).all()
+
+        assert np.allclose(
+            dataset["current_idle"]
+            + dataset["current_busy"],
+            dataset["station_capacity"]
+        )
+
+        # Occupancy rate consistency
+        assert dataset["occupancy_rate"].between(0, 1).all()
+
+        assert np.allclose(
+            dataset["occupancy_rate"],
+            dataset["current_busy"]
+            / dataset["station_capacity"]
+        )
+
+        # Chronological split integrity
         assert dataset["time"].ge(start).all()
         assert dataset["time"].lt(end).all()
+        assert dataset["target_time"].ge(start).all()
         assert dataset["target_time"].lt(end).all()
 
+        # Verify target timestamp alignment
         assert (
             dataset["target_time"]
             == dataset["time"]
             + pd.to_timedelta(
-                dataset["prediction_horizon"], unit="min"
+                dataset["prediction_horizon"],
+                unit="min"
             )
         ).all()
 
+        # Unique observation identifiers
         assert not dataset.duplicated(
             ["station_id", "time", "prediction_horizon"]
         ).any()
 
-        assert set(dataset["target"].unique()) == {0.0, 1.0}
+    # Prevent chronological target leakage
+    assert (
+        train["target_time"].max()
+        < validation["time"].min()
+    )
 
-    assert train["target_time"].max() < validation["time"].min()
-    assert validation["target_time"].max() < test["time"].min()
+    assert (
+        validation["target_time"].max()
+        < test["time"].min()
+    )
 
     return True
 
