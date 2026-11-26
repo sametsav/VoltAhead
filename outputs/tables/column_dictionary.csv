@@ -1,0 +1,25 @@
+table,column,dtype_as_stored,description
+raw station 5-min,time,str,Timestamp of the 5-minute interval (start of interval)
+raw station 5-min,busy,int64,Number of charging points in use (busy + idle = station capacity)
+raw station 5-min,idle,int64,Number of charging points free
+raw station 5-min,s_price,float64,Service-fee price (unit not documented in the files; per kWh)
+raw station 5-min,e_price,float64,Electricity price (unit not documented in the files; per kWh)
+raw station 5-min,fast_busy,int64,Busy fast-charging points
+raw station 5-min,fast_idle,int64,Idle fast-charging points
+raw station 5-min,slow_busy,int64,Busy slow-charging points
+raw station 5-min,slow_idle,int64,Idle slow-charging points
+raw station 5-min,duration,float64,"Charging time in the interval, in hours, summed over piles (0.083 = 5 min of one pile) [inferred from values]"
+raw station 5-min,volume,float64,"Energy delivered in the interval, kWh [inferred: 0.583 = 7 kW x 5 min]"
+station_information (raw),station_id,int64,Station key (int)
+station_information (raw),longitude,float64,Longitude (WGS84)
+station_information (raw),latitude,float64,Latitude (WGS84)
+station_information (raw),slow_count,int64,Slow charging points
+station_information (raw),fast_count,int64,Fast charging points
+station_information (raw),charge_count,int64,Total charging points = station capacity
+station_information (raw),TAZID,int64,Traffic analysis zone the station belongs to
+pile_rated_power,pile_id,int64,Pile key (station_id + 4 digits)
+pile_rated_power,power,float64,Rated power (kW)
+pile_rated_power,pileType,str,AC or DC
+pile_rated_power,station_id,int64,Station key (stored as float in the CSV; loader casts to int)
+zone matrices,time,str,Timestamp (rows)
+zone matrices,<TAZID>,float64 (x 275 zone columns),One column per traffic zone; values are the zone-level variable (e.g. occupancy = busy points in the zone)

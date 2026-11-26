@@ -1,0 +1,4 @@
+type,nan_rows,share_of_all_nan,share_of_all_rows
+Leading (before the station's first report),5820725,0.3136949710396443,0.06638653896126173
+Interior (gaps between first and last report),10738628,0.5787343671906013,0.12247621148782946
+Trailing (after the station's last report),1996013,0.10757066176975437,0.022764929590675546
