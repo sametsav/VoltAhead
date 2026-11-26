@@ -1,0 +1,12 @@
+Property,Value
+Number of Stations,100
+Total Observations,2592000
+Expected Observations,2592000
+Timestamps per Station,25920
+Start Date,2022-12-01 00:00:00
+End Date,2023-02-28 23:55:00
+Missing Idle Observations,660016
+Valid Idle Observations,1931984
+Missing Observation Rate (%),25.46
+Duplicate Station-Time Rows,0
+Station IDs Match Shared List,True

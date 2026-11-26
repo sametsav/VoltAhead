@@ -1,0 +1,7 @@
+Dataset Period,Split,Data Coverage (%),Usable Examples (30 min),Actual Split Ratio (%)
+Full Dataset (90 days),Train,83.61,1513165,78.78
+Full Dataset (90 days),Validation,53.86,195941,10.2
+Full Dataset (90 days),Test,52.89,211523,11.01
+Higher Coverage (52 days),Train,90.29,933098,69.29
+Higher Coverage (52 days),Validation,89.88,206482,15.33
+Higher Coverage (52 days),Test,90.21,207065,15.38

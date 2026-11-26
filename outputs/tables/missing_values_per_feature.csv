@@ -1,0 +1,17 @@
+Feature,Missing Before Filtering,Missing Rate (%),Missing After Filtering
+station_id,0,0.0,0
+hour,0,0.0,0
+day_of_week,0,0.0,0
+is_weekend,0,0.0,0
+current_idle,146579,9.79,0
+current_busy,146579,9.79,0
+station_capacity,0,0.0,0
+occupancy_rate,146579,9.79,0
+idle_lag_5,146669,9.79,0
+idle_lag_10,146759,9.8,0
+idle_lag_15,146849,9.81,0
+idle_lag_30,147119,9.82,0
+idle_lag_40,147299,9.84,0
+idle_lag_60,147659,9.86,0
+idle_lag_120,148739,9.93,0
+prediction_horizon,0,0.0,0

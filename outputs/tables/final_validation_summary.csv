@@ -1,0 +1,4 @@
+Split,Valid Time Boundaries,Valid Target Alignment,Valid Binary Targets,Valid Station Features,Complete Lag Features,Valid Horizons,Duplicate Examples
+Train,True,True,True,True,True,True,0
+Validation,True,True,True,True,True,True,0
+Test,True,True,True,True,True,True,0

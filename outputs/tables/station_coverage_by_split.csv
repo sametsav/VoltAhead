@@ -1,0 +1,4 @@
+Split,Total Stations,Seen Stations,Unseen Stations,Coverage of Original 100 Stations (%)
+Train,91,91,0,91.0
+Validation,90,89,1,90.0
+Test,93,91,2,93.0

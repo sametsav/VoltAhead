@@ -1,0 +1,4 @@
+Split,Available (1),Unavailable (0),Available (%),Unavailable (%)
+Train,2669770,128799,95.4,4.6
+Validation,592861,25865,95.82,4.18
+Test,593905,26528,95.72,4.28

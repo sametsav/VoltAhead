@@ -1,0 +1,10 @@
+Split,Station ID,Horizon (min),Observations,Available (1),Unavailable (0)
+Validation,1948,30,1960,1956,4
+Validation,1948,40,1958,1954,4
+Validation,1948,60,1954,1950,4
+Test,1790,30,79,79,0
+Test,1948,30,2298,2298,0
+Test,1790,40,75,75,0
+Test,1948,40,2296,2296,0
+Test,1790,60,67,67,0
+Test,1948,60,2292,2292,0
