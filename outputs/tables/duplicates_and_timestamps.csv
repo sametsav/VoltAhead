@@ -1,0 +1,7 @@
+check,stations_affected,rows_affected
+Stations with duplicated timestamps,0,0.0
+Stations with fully duplicated rows,0,0.0
+Stations not sorted by time,0,
+"Stations with a row count != 25,920",0,
+Stations with timestamps missing from the expected grid,0,0.0
+Stations with timestamps outside the expected grid,0,0.0
