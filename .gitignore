@@ -12,6 +12,4 @@ __pycache__/
 # macOS
 .DS_Store
 
-notebooks/04_availability_distribution.ipynb
-
 !data/VoltAhead_Dataset.zip
