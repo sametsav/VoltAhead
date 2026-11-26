@@ -1,0 +1,4 @@
+Split,Start Date,End Date,Observations,Unique Station-Time Observations,Stations,Input Features,Missing Feature Values,Available (1),Unavailable (0),Imbalance Ratio (Available / Unavailable)
+Train,2022-12-01 02:00:00,2023-01-05 23:25:00,2798569,933133,91,16,0,2669770,128799,20.73
+Validation,2023-01-06 00:00:00,2023-01-13 23:25:00,618726,206482,90,16,0,592861,25865,22.92
+Test,2023-01-14 00:00:00,2023-01-21 23:25:00,620433,207070,93,16,0,593905,26528,22.39

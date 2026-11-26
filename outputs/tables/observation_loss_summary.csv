@@ -1,0 +1,6 @@
+Stage,Remaining Observations,Removed at Stage,Retained (%)
+Initial 52-day examples,4492800,0,100.0
+Valid target-time boundary,4490200,2600,99.94
+Valid current features,4050723,439477,90.16
+Valid target labels,4050070,653,90.15
+Complete lag features,4042382,7688,89.97

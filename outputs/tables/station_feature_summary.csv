@@ -1,0 +1,5 @@
+Feature,Missing Values,Minimum,Maximum
+current_idle,660016,0.0,54.0
+current_busy,660016,0.0,41.0
+station_capacity,0,1.0,54.0
+occupancy_rate,660016,0.0,1.0

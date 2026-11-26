@@ -1,0 +1,4 @@
+Dataset,File,Observations,Stations,Input Features,File Size (MB),Verified
+train,train.parquet,2798569,91,16,5.19,True
+validation,validation.parquet,618726,90,16,1.12,True
+test,test.parquet,620433,93,16,1.08,True

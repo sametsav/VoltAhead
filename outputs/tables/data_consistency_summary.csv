@@ -1,0 +1,7 @@
+Check,Count
+Both Idle and Busy Missing,660016
+Partially Missing Observations,0
+Invalid Station Capacity,0
+Negative Idle or Busy,0
+Idle or Busy Exceeds Capacity,0
+Idle + Busy != Capacity,0

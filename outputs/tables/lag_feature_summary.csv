@@ -1,0 +1,8 @@
+Lag (minutes),Feature,Missing Values,Valid Observations,Missing Rate (%)
+5,idle_lag_5,660068,1931932,25.47
+10,idle_lag_10,660120,1931880,25.47
+15,idle_lag_15,660172,1931828,25.47
+30,idle_lag_30,660328,1931672,25.48
+40,idle_lag_40,660432,1931568,25.48
+60,idle_lag_60,660640,1931360,25.49
+120,idle_lag_120,661264,1930736,25.51

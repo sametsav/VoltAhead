@@ -1,0 +1,7 @@
+Dataset Period,Horizon (min),Base Observations,Valid Base Observations,Missing Rate (%),Complete-Case Examples,Available (1),Unavailable (0),Remaining Stations
+Full Dataset (90 days),30,2592000,1931984,25.46,1921253,1845365,75888,99
+Full Dataset (90 days),40,2592000,1931984,25.46,1920764,1844903,75861,99
+Full Dataset (90 days),60,2592000,1931984,25.46,1919862,1844053,75809,99
+Higher Coverage (52 days),30,1497600,1351021,9.79,1347719,1287256,60463,93
+Higher Coverage (52 days),40,1497600,1351021,9.79,1347524,1287064,60460,93
+Higher Coverage (52 days),60,1497600,1351021,9.79,1347139,1286688,60451,93
