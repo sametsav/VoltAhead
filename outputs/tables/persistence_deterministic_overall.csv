@@ -1,0 +1,2 @@
+model_name,model_version,evaluation_group,n_stations,n_observations,accuracy,balanced_accuracy,precision_0,recall_0,f1_0,roc_auc,ap_0,brier_score,actual_0_predicted_0,actual_0_predicted_1,actual_1_predicted_0,actual_1_predicted_1
+persistence,deterministic,overall,90,618726,0.9967319944531182,0.9802691297879105,0.9596329567798897,0.9623042721824859,0.9609667580402301,0.9802691297879105,0.925034712734821,0.0032680055468818185,24890,975,1047,591814

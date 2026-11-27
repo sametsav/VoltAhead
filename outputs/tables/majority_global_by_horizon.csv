@@ -1,0 +1,4 @@
+model_name,model_version,evaluation_group,prediction_horizon,n_stations,n_observations,accuracy,balanced_accuracy,precision_0,recall_0,f1_0,roc_auc,ap_0,brier_score,actual_0_predicted_0,actual_0_predicted_1,actual_1_predicted_0,actual_1_predicted_1
+majority,global,horizon,30,90,206482,0.9581803740761906,0.5,N/A,0.0,0.0,0.5,0.04181962592380934,0.0401109165804116,0,8635,0,197847
+majority,global,horizon,40,90,206302,0.9581923587749998,0.5,N/A,0.0,0.0,0.5,0.04180764122500024,0.04010008619377027,0,8625,0,197677
+majority,global,horizon,60,90,205942,0.9582163910227152,0.5,N/A,0.0,0.0,0.5,0.041783608977284864,0.04007836862382849,0,8605,0,197337

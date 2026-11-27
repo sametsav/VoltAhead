@@ -1,0 +1,30 @@
+{
+  "models": {
+    "persistence": [
+      "deterministic",
+      "probability"
+    ],
+    "majority": [
+      "global",
+      "horizon"
+    ]
+  },
+  "threshold": 0.5,
+  "seed": 42,
+  "y_prob": "P(Available=1)",
+  "fit_period": {
+    "start": "2022-12-01",
+    "end_exclusive": "2022-12-30",
+    "constraint": "time and target_time both inside"
+  },
+  "smoothing": {
+    "formula": "(k + m*prior) / (n + m)",
+    "m": 10,
+    "prior": "available share of the same fitting data (per horizon for persistence)",
+    "empty_group": "fallback to prior"
+  },
+  "persistence_deterministic": "y_prob = 1.0 if current_idle > 0 else 0.0",
+  "persistence_probability_table": "outputs/tables/persistence_transition_probabilities.csv",
+  "majority_table": "outputs/tables/majority_class_proportions.csv",
+  "global_majority_probability": 0.9518422537704846
+}

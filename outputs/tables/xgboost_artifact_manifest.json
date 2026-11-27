@@ -1,0 +1,37 @@
+{
+  "artifacts_not_in_git (share via team artifact folder)": {
+    "xgboost_initial.joblib": {
+      "bytes": 320419
+    },
+    "xgboost_initial_preprocessor.joblib": {
+      "bytes": 3149
+    },
+    "xgboost_optimized.joblib": {
+      "bytes": 596644
+    },
+    "xgboost_optimized_booster.json": {
+      "bytes": 899352
+    },
+    "xgboost_optimized_preprocessor.joblib": {
+      "bytes": 3053
+    },
+    "majority_global_validation_predictions.parquet": {
+      "bytes": 243259
+    },
+    "majority_horizon_validation_predictions.parquet": {
+      "bytes": 250933
+    },
+    "persistence_deterministic_validation_predictions.parquet": {
+      "bytes": 249323
+    },
+    "persistence_probability_validation_predictions.parquet": {
+      "bytes": 274244
+    },
+    "xgboost_initial_validation_predictions.parquet": {
+      "bytes": 418269
+    },
+    "xgboost_optimized_validation_predictions.parquet": {
+      "bytes": 723419
+    }
+  }
+}

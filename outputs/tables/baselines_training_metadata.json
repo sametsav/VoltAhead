@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "python": "3.13.18",
+    "os": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "ram_gb": 7.8,
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "sklearn": "1.9.1",
+    "n_jobs": 1,
+    "seed": 42,
+    "git_commit": null,
+    "xgboost": "3.4.1"
+  },
+  "fit_rows": 2259325,
+  "validation_rows": 618726,
+  "fit_time_seconds": 0.177,
+  "inference_time_seconds_all_variants": 0.142,
+  "validation_stations": 90,
+  "unseen_validation_stations": [
+    1948
+  ],
+  "test_data_used": false
+}

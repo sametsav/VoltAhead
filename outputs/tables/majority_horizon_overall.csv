@@ -1,0 +1,2 @@
+model_name,model_version,evaluation_group,n_stations,n_observations,accuracy,balanced_accuracy,precision_0,recall_0,f1_0,roc_auc,ap_0,brier_score,actual_0_predicted_0,actual_0_predicted_1,actual_1_predicted_0,actual_1_predicted_1
+majority,horizon,overall,90,618726,0.9581963583233936,0.5,N/A,0.0,0.0,0.4999001222729707,0.04179430729283575,0.040096472585940485,0,25865,0,592861
