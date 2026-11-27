@@ -1,0 +1,76 @@
+{
+    "model_name": "random_forest",
+    "model_version": "initial",
+    "dataset_version": "VOLTAHEAD-DATA-V1",
+    "training": {
+        "period_start": "2022-12-01",
+        "period_end": "2022-12-23",
+        "observations": 1790062,
+        "stations": 91,
+        "training_time_seconds": 46.56550770904869,
+        "memory_before_mb": 845.09375,
+        "memory_after_mb": 589.375
+    },
+    "validation": {
+        "observations": 618726,
+        "inference_time_seconds": 0.7766037499532104,
+        "primary_metric": "seen_ap_0",
+        "primary_metric_value": 0.9796184921556924
+    },
+    "features": [
+        "station_id",
+        "hour",
+        "day_of_week",
+        "is_weekend",
+        "current_idle",
+        "current_busy",
+        "station_capacity",
+        "occupancy_rate",
+        "idle_lag_5",
+        "idle_lag_10",
+        "idle_lag_15",
+        "idle_lag_30",
+        "idle_lag_40",
+        "idle_lag_60",
+        "idle_lag_120",
+        "prediction_horizon"
+    ],
+    "transformed_feature_count": 106,
+    "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 15,
+        "min_samples_leaf": 5,
+        "max_features": "sqrt",
+        "class_weight": null,
+        "random_state": 42,
+        "n_jobs": 4
+    },
+    "classification_threshold": 0.5,
+    "optimization": {
+        "feature_selection": false,
+        "class_balancing": false,
+        "probability_calibration": false,
+        "threshold_optimization": false
+    },
+    "model_complexity": {
+        "n_estimators": 100,
+        "average_tree_depth": 15.0,
+        "total_tree_nodes": 129268
+    },
+    "environment": {
+        "python_version": "3.14.6",
+        "scikit_learn_version": "1.9.1",
+        "pandas_version": "3.1.1",
+        "numpy_version": "2.5.5",
+        "joblib_version": "1.6.0",
+        "operating_system": "macOS-15.5-arm64-arm-64bit-Mach-O",
+        "cpu_model": "Apple M2 Pro",
+        "cpu_architecture": "arm64",
+        "cpu_cores": 10,
+        "ram_gb": 16.0,
+        "n_jobs": 4,
+        "random_state": 42
+    },
+    "git_commit": "9302d3e54a16739256b61bd46aede48cd61ad8b0",
+    "git_working_tree_dirty": true
+}
