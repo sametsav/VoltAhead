@@ -1,0 +1,35 @@
+{
+  "generated_at_utc": "2026-11-27T15:10:10.200945+00:00",
+  "environment": {
+    "python_version": "3.15.0",
+    "operating_system": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "processor": "arm",
+    "cpu_count": 10,
+    "total_ram_gb": 16.0,
+    "numpy_version": "2.5.5",
+    "pandas_version": "3.1.1",
+    "scikit_learn_version": "1.9.1",
+    "scipy_version": "1.18.1",
+    "pyarrow_version": "26.0.1",
+    "joblib_version": "1.6.0"
+  },
+  "training": {
+    "initial_observations": 1790062,
+    "optimized_observations": 2256959,
+    "calibration_observations": 306216,
+    "threshold_observations": 228374,
+    "validation_observations": 618726,
+    "initial_training_seconds": 2.4358223330345936,
+    "optimized_training_seconds": 2.053208417026326,
+    "initial_inference_seconds": 0.20287441700929776,
+    "optimized_inference_seconds": 0.14755033398978412
+  },
+  "model_artifacts": {
+    "initial": "outputs/models/logistic_regression_initial.joblib",
+    "optimized": "outputs/models/logistic_regression_optimized.joblib"
+  },
+  "prediction_artifacts": {
+    "initial": "outputs/predictions/logistic_regression_initial_validation.parquet",
+    "optimized": "outputs/predictions/logistic_regression_optimized_validation.parquet"
+  }
+}

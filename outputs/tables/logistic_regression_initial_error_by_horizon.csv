@@ -1,0 +1,4 @@
+prediction_horizon,observations,actual_unavailable,actual_available,correctly_predicted_unavailable,missed_unavailable,false_unavailable,correctly_predicted_available,missed_unavailable_rate (%),false_unavailable_rate (%)
+30,206482,8635,197847,7576,1059,149,197698,12.26,0.08
+40,206302,8625,197677,7534,1091,186,197491,12.65,0.09
+60,205942,8605,197337,7460,1145,248,197089,13.31,0.13

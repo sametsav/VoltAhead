@@ -1,0 +1,36 @@
+{
+  "model_name": "logistic_regression",
+  "source_commit_at_export": "5b4dd5891ac87f674b3b161049ace376eeffb9cb",
+  "source_branch": "model/logistic-regression",
+  "note": "The source commit identifies the repository state at manifest creation. Uncommitted notebook or module changes must be included in the final delivery commit.",
+  "artifacts": [
+    {
+      "model_version": "initial",
+      "artifact_type": "model",
+      "relative_path": "outputs/models/logistic_regression_initial.joblib",
+      "size_bytes": 5337,
+      "sha256": "e1b4581ef1d12217ae471b478af3a716a0a4b8fbde5dba53e419847a97937abe"
+    },
+    {
+      "model_version": "optimized",
+      "artifact_type": "model",
+      "relative_path": "outputs/models/logistic_regression_optimized.joblib",
+      "size_bytes": 5926,
+      "sha256": "858a48bc4a488d6ba531b11178b56bddb0e379e1bc9794f9633499c606bde6a0"
+    },
+    {
+      "model_version": "initial",
+      "artifact_type": "validation_predictions",
+      "relative_path": "outputs/predictions/logistic_regression_initial_validation.parquet",
+      "size_bytes": 2069062,
+      "sha256": "d038feaf007bc4af1d15a6c1f5252d027c560dfcec7dbbe8553f9a7aca16e82e"
+    },
+    {
+      "model_version": "optimized",
+      "artifact_type": "validation_predictions",
+      "relative_path": "outputs/predictions/logistic_regression_optimized_validation.parquet",
+      "size_bytes": 280342,
+      "sha256": "a0f58256393bac9f962b9f7a3812f239d6f6258aa8ed6ad0d1ef594cbd57c67e"
+    }
+  ]
+}

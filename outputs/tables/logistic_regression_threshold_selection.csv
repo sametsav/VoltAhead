@@ -1,0 +1,2 @@
+selected_threshold,best_internal_f1_0,default_threshold_f1_0,number_of_tied_thresholds,selection_reason
+0.5,0.9191159181754056,0.9191159181754056,55,The default threshold achieves the maximum internal Class-0 F1; no threshold adjustment is required.

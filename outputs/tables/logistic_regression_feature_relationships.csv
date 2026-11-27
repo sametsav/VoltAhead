@@ -1,0 +1,3 @@
+Relationship,Matching observations (%)
+station_capacity = current_idle + current_busy,100.0
+occupancy_rate = current_busy / station_capacity,100.0
