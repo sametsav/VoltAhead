@@ -1,0 +1,17 @@
+feature,gain_importance,rank
+occupancy_rate,0.88573873,1
+idle_lag_10,0.04907415,2
+station_id,0.019302655,3
+idle_lag_15,0.01751471,4
+idle_lag_5,0.006234311,5
+idle_lag_40,0.00489047,6
+idle_lag_120,0.0026700874,7
+hour,0.0026295618,8
+day_of_week,0.0024873603,9
+idle_lag_30,0.002432828,10
+current_busy,0.0016878026,11
+prediction_horizon,0.0014596338,12
+station_capacity,0.001423444,13
+current_idle,0.0013692528,14
+idle_lag_60,0.0010849136,15
+is_weekend,0.0,16

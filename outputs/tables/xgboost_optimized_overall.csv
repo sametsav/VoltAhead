@@ -1,0 +1,2 @@
+model_name,model_version,evaluation_group,n_stations,n_observations,accuracy,balanced_accuracy,precision_0,recall_0,f1_0,roc_auc,ap_0,brier_score,actual_0_predicted_0,actual_0_predicted_1,actual_1_predicted_0,actual_1_predicted_1
+xgboost,optimized,overall,90,618726,0.9963279383765996,0.9718682036988218,0.9662463934231849,0.9451768799536052,0.9555955126451159,0.9943225921650286,0.9750282669555327,0.0032539476751864025,24447,1418,854,592007

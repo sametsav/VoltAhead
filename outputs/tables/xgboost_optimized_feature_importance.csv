@@ -1,0 +1,15 @@
+feature,gain_importance
+current_idle,0.74401194
+idle_lag_5,0.11264146
+station_id,0.071070805
+idle_lag_10,0.029861819
+idle_lag_15,0.017004834
+idle_lag_120,0.004745495
+hour,0.004343647
+day_of_week,0.0033902396
+is_weekend,0.00308117
+idle_lag_40,0.0027641256
+station_capacity,0.0021033399
+idle_lag_60,0.0016790178
+idle_lag_30,0.0016776917
+prediction_horizon,0.0016244364
