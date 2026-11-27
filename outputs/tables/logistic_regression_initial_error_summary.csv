@@ -1,0 +1,5 @@
+Metric,Count
+Correctly Predicted Unavailable,22570
+Missed Unavailable Observations,3295
+False Unavailable Predictions,583
+Correctly Predicted Available,592278
