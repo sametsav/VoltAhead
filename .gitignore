@@ -15,3 +15,12 @@ __pycache__/
 notebooks/04_availability_distribution.ipynb
 
 !data/VoltAhead_Dataset.zip
+
+# Trained model artifacts
+outputs/models/
+
+# Model prediction artifacts
+outputs/predictions/
+
+# Notebook-generated temporary outputs
+notebooks/outputs/

@@ -1,0 +1,2 @@
+model_name,model_version,evaluation_group,n_stations,n_observations,accuracy,balanced_accuracy,precision_0,recall_0,f1_0,roc_auc,ap_0,brier_score,actual_0_predicted_0,actual_0_predicted_1,actual_1_predicted_0,actual_1_predicted_1
+random_forest,optimized_sigmoid,overall,90,618726,0.9970600879872512,0.9792201403787401,0.969611749082103,0.9597525613763773,0.9646569646569647,0.9937120628538109,0.9783233156134817,0.002892700600049793,24824,1041,778,592083
