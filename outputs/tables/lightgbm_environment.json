@@ -1,0 +1,25 @@
+{
+    "created_at_utc": "2026-11-28T11:34:12.433060+00:00",
+    "python_version": "3.11.9",
+    "operating_system": "Windows-10-10.0.26300-SP0",
+    "architecture": "AMD64",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 12,
+    "total_ram_gib": 15.79,
+    "device": "cpu",
+    "model_threads": 4,
+    "random_seed": 42,
+    "git_commit": "27acc9fb8a9ae81ebd41ba786792be8daceeb508",
+    "git_branch": "model/lightgbm",
+    "git_working_tree_dirty": true,
+    "library_versions": {
+        "lightgbm": "4.7.0",
+        "scikit-learn": "1.9.1",
+        "pandas": "3.1.1",
+        "numpy": "2.4.6",
+        "pyarrow": "26.0.1",
+        "joblib": "1.6.0",
+        "matplotlib": "3.11.2",
+        "seaborn": "0.13.2"
+    }
+}

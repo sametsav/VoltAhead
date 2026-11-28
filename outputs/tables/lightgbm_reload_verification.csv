@@ -1,0 +1,3 @@
+model_version,observations,maximum_probability_difference,matching_labels,status,fresh_process_status,fresh_process_observations
+initial,618726,0.0,618726,PASSED,PASSED,210
+optimized,618726,0.0,618726,PASSED,PASSED,210

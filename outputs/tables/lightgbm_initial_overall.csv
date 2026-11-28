@@ -1,0 +1,2 @@
+model_name,model_version,evaluation_group,n_stations,n_observations,accuracy,balanced_accuracy,precision_0,recall_0,f1_0,roc_auc,ap_0,brier_score,actual_0_predicted_0,actual_0_predicted_1,actual_1_predicted_0,actual_1_predicted_1
+lightgbm,initial,overall,90,618726,0.9921742419099893,0.9172139562188993,0.9736403370432118,0.8354146530059926,0.8992467435182487,0.994341883005823,0.9629358804789043,0.005755742214948785,21608,4257,585,592276

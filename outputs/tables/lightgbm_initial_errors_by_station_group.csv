@@ -1,0 +1,3 @@
+station_group,observations,total_errors,actual_unavailable,missed_unavailable,false_alarms,error_rate,missed_unavailable_rate
+seen,612854,4830,25853,4245,585,0.007881159297320407,0.16419757861756856
+unseen,5872,12,12,12,0,0.0020435967302452314,1.0
