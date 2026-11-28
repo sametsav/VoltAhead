@@ -24,3 +24,6 @@ outputs/predictions/
 
 # Notebook-generated temporary outputs
 notebooks/outputs/
+
+# Serialized model artifacts
+artifacts/lightgbm/
