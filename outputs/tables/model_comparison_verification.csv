@@ -1,0 +1,13 @@
+file,model_name,model_version,observations,threshold,status
+majority_global_validation_predictions.parquet,majority,global,618726,0.5,Passed
+majority_horizon_validation_predictions.parquet,majority,horizon,618726,0.5,Passed
+persistence_deterministic_validation_predictions.parquet,persistence,deterministic,618726,0.5,Passed
+persistence_probability_validation_predictions.parquet,persistence,probability,618726,0.5,Passed
+lightgbm_initial_validation.parquet,lightgbm,initial,618726,0.5,Passed
+lightgbm_optimized_validation.parquet,lightgbm,optimized,618726,0.81,Passed
+logistic_regression_initial_validation.parquet,logistic_regression,initial,618726,0.5,Passed
+logistic_regression_optimized_validation.parquet,logistic_regression,optimized,618726,0.5,Passed
+initial_validation.parquet,random_forest,initial,618726,0.5,Passed
+optimized_sigmoid_validation.parquet,random_forest,optimized_sigmoid,618726,0.7509524121442741,Passed
+xgboost_initial_validation_predictions.parquet,xgboost,initial,618726,0.5,Passed
+xgboost_optimized_validation_predictions.parquet,xgboost,optimized,618726,0.53,Passed
