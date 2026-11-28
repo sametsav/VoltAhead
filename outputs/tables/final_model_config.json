@@ -1,0 +1,40 @@
+{
+  "dataset_version": "VOLTAHEAD-DATA-V1",
+  "model_name": "random_forest",
+  "model_version": "initial",
+  "model_artifact": "outputs/models/random_forest/initial_model.joblib",
+  "artifact_sha256": "59971b14c5354140658be2fff4f87f749283b831695e086a88aadd841fddb2b1",
+  "primary_metric": "seen_station_ap_0",
+  "validation_ap_0": 0.979618,
+  "validation_brier_score": 0.002755,
+  "threshold": 0.5,
+  "calibration": null,
+  "prediction_horizons": [
+    30,
+    40,
+    60
+  ],
+  "feature_columns": [
+    "station_id",
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "current_idle",
+    "current_busy",
+    "station_capacity",
+    "occupancy_rate",
+    "idle_lag_5",
+    "idle_lag_10",
+    "idle_lag_15",
+    "idle_lag_30",
+    "idle_lag_40",
+    "idle_lag_60",
+    "idle_lag_120",
+    "prediction_horizon"
+  ],
+  "probability_definition": "P(Available=1)",
+  "selection_split": "validation",
+  "test_used_for_selection": false,
+  "retraining": false,
+  "git_commit": "611c8311cfe522fbac7be312bd6e5bf857444324"
+}
